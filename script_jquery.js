@@ -17,8 +17,12 @@ $(function(){
 
         $("#mensagem")
             .text("Cor alterada com sucesso!!")
-            .css({color: 'blue', border:"1px solid", backgroundColor: "#6C6CE0"})
+            .css({color: 'blue', border:"1px solid"})
             .delay(3000)
-            .fadeOut("fast");
+            .fadeOut("fast")
+            .addClass("green")
+
+
+        $("button").removeClass("blue");
     }); 
 });
