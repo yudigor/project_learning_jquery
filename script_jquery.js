@@ -1,28 +1,34 @@
 $(function(){
-    $('#vermelho').click(function(){
-        $('p')
-            .css('background-color', 'red')
-            .hide()
-            .fadeOut('fast')
-            .delay(1000)
-            .fadeIn('fast');
+    $("#l1").click(function(){
+        $("#i2").hide()
+        $("#i3").hide()
+        $("#i4").hide()
+        $('#i1').show()
+        
+        
     });
+    $("#l2").click(function(){
+        $("#i1").hide()
+        $("#i3").hide()
+        $("#i4").hide()
+        $('#i4').show()
+        
+    })
+    $("#l3").click(function(){
+        $("#i4").hide()
+        $("#i1").hide()
+        $("#i2").hide()
+        $('#i3').show()
+        
+    })
 
-    $('#azul').click(function(){
-        $('p')
-            .css('background-color', 'blue')
-            .fadeOut('slow')
-            .delay(1000)
-            .fadeIn('slow')
-
-        $("#mensagem")
-            .text("Cor alterada com sucesso!!")
-            .css({color: 'blue', border:"1px solid"})
-            .delay(3000)
-            .fadeOut("fast")
-            .addClass("green")
+    $("#l4").click(function(){
+        $("#i1").hide()
+        $("#i2").hide()
+        $("#i3").hide()
+        $('#i4').show()
+        
+    })
 
 
-        $("button").removeClass("blue");
-    }); 
-});
+})
