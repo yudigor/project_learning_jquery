@@ -1,21 +1,25 @@
 $(function(){
     $('#vermelho').click(function(){
-        $('p').css('background-color', 'red');
-        $('p').hide();
-        $('p').fadeOut('fast');
-        $("p").delay(1000);
-        $("p").fadeIn('fast');
+        $('p')
+            .css('background-color', 'red')
+            .hide()
+            .fadeOut('fast')
+            .delay(1000)
+            .fadeIn('fast');
     });
 
     $('#azul').click(function(){
-        $('p').css('background-color', 'blue');
-        $('p').fadeOut('slow');
-        $("p").delay(1000);
-        $("p").fadeIn('slow');
-        $("#mensagem").text("Cor alterada com sucesso!!");
-        $("#mensagem").css('color', "blue");
-        $("#mensagem").css('border', "1px solid blue");
-        $("#mensagem").delay(3000);
-        $("#mensagem").fadeOut("fast");
+        $('p')
+            .css('background-color', 'blue')
+            .fadeOut('slow')
+            .delay(1000)
+            .fadeIn('slow')
+            
+        $("#mensagem")
+            .text("Cor alterada com sucesso!!")
+            .css('color', "blue")
+            .css('border', "1px solid blue")
+            .delay(3000)
+            .fadeOut("fast");
     }); 
 });
